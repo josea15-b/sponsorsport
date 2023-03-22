@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script> 
+		const menuToggle = document.querySelector('.menu-toggle');
+const menuList = document.querySelector('.menu-list');
+
+menuToggle.addEventListener('click', function() {
+  menuList.classList.toggle('active');
+});
+
+		</script>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo de la página web">
+      <h1>Mi página web</h1>
+    </div>
+    <nav class="menu">
+      <button class="menu-toggle">Menu</button>
+      <ul class="menu-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Acerca de nosotros</a></li>
+        <li><a href="#patrocinio">Opciones de patrocinio</a></li>
+        <li><a href="#galeria">Galería de imágenes</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="inicio">
+      <h2>Bienvenidos a Mi página web</h2>
+      <p>Descripción de la página web y su objetivo.</p>
+    </section>
+    
+    <section id="nosotros">
+      <h2>Acerca de nosotros</h2>
+      <p>Información sobre la página web y su objetivo.</p>
+      <h3>Equipos de fútbol y baloncesto en guinea ecuatorial</h3>
+      <p>Información detallada sobre los equipos de fútbol y baloncesto en guinea ecuatorial que buscan patrocinadores, incluyendo los logros deportivos, los objetivos a futuro, la filosofía del equipo y cualquier otro detalle relevante.</p>
+    </section>
+    
+    <section id="patrocinio">
+      <h2>Opciones de patrocinio</h2>
+      <p>Diferentes opciones de patrocinio para los equipos de fútbol y baloncesto en guinea ecuatorial, con detalles sobre los beneficios para el patrocinador.</p>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    
+    <section id="galeria">
+      <h2>Galería de imágenes</h2>
+      <p>Una galería de imágenes que muestre a los equipos de fútbol en acción, con fotos de los partidos y entrenamientos</p>
+      <div class="gallery">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="imagen 3">
+		<img src="imagen4.jpg" alt="Imagen 4">
+		<img src="imagen5.jpg" alt="Imagen 5">
+		<img src="imagen6.jpg" alt="Imagen 6">
+		</div>
+		</section>
+		
+		  </main>
+		  <footer>
+			<p>Derechos reservados &copy; 2023</p>
+		  </footer>
+		  <script ></script>
+    </footer>
+	</body>
+		</html>
